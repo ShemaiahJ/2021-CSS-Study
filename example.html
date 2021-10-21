@@ -1,82 +1,130 @@
+
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Example Template - 2 Columns</title>
     <style>
-      body{
-        background-color: #333
-      }
-      .container{
-        color: black;
-        background-color: #333;
-        width:90%;
-        margin:
-      }
-      #header{
-        width:100%;
-        height: 100px;
-        text-align: center;
-        vertival-align: middle;
-        font-size: 75px;
-        font-weight: bold;
-        ul{
-          list-style-type: none;
-        margin: 0;
-        padding: 0;
-        background-color: #333;
-        overflow: hidden;
-           }
-           li{
-              float: left;
-              border-right: 1px solid #bbb;
-           }
-           li a{
-             display: block;
-             padding: 14px 16px;
-             color: blue;
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            color: black;
+            background-color: white;
+            width: 90%;
+            margin: auto;
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            /*background-color: cyan;*/
+            text-align: center;
+            vertical-align: middle;
+            font-size: 75px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li a {
+            display: block;
+            color: yellow;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-           }
-           li a:hover:not(.active){
-              background-color: #111;
-           }
+        }
 
-           .active{
-             background-color: #84AA6D;
-           }
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        #content {
+            float: left;
+            width: 75%;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #sidebar {
+
+        }
+        #footer{
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+        }
+        div#footer a{
+            color: white;
+            text-decoration: none;
+        }
     </style>
-  </head>
-  <body>
-
-      <div class="container">
+</head>
+<body>
+<div class="container">
+    <div class="row">
         <div id="header">
-          Resident Evil
-          <div class="row">
-            <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Socials</a></li>
-            </ul>
-             Tyrant Virus, otherwise known as the t-Virus, is the general name given to a series of mutant Progenitor virus strains.
-      Initially developed by Umbrella Pharmaceuticals in the late 1960s, the primary goal of the "t-Virus Project" was to effectively eliminate the need for a large-scale conventional army and generate revenue to go to their eugenics program, the Wesker Project. This required two things: the virus had to be highly-contagious to the point of infecting an entire target population and guarantee a 100% mortality rate.[1][2] Such a virus was impossible due to such contagions' tendencies to kill too many people at once and prevent further spread. By 1978, development moved from creating a lethal, highly-contagious virus to one that would mutate hosts to become physically stronger and remain alive despite organ failures and severe brain damage, the latter leading to murderous aggression and an obsessive hunger to the state of cannibalism.[1] With the 1981 discovery of a statistical 10% of any population being naturally immune or unmutated asymptomatic carriers,[2] Phase 2 of the research project focused on creating workarounds, and while work was under way creating an improved t-Virus with 0% immunity, the pioneering Arklay Laboratory team under Dr. William Birkin engineered a new species of animal that would hunt down and kill survivors, beginning with simple Bio-Organic Weapons such as the Web Spinner, but breaking ground with the genetically-chimeric Hunter α.[2]
-      In the mid-1980s, the t-Virus Project focused on creating intelligent bio-weapons, most famously the Tyrants.[3] After the collapse of Umbrella in the early 2000s, the t-Virus became available to dozens of organizations with the means to finalize Umbrella's research in their own way and dominate the weapon industry. Independently developed mutagens such as t-Abyss were developed thanks to this.
-      Contents
-      1 History
-      1.1 Spencer project
-      1.2 Ashford projects
-      1.3 Marcus-Birkin project
-      1.4 Later research
-      2 Infection
-      2.1 Effects of Infection
-      2.2 Means of infection
-      3 Known treatments
-      4 Gallery
-      5 Source
-      History
-      From the Progenitor Virus' discovery in December 1966, the ultimate goal of Dr. Oswell E. Spencer and his colleagues Dr. Edward Ashford and Dr. James Marcus was the birthing of a new age of eugenics with mutagenic viruses improving the human race. To fund this program, dubbed the Wesker Project, it was agreed that strains of the virus should be engineered as a military product, leading to the creation of Umbrella Pharmaceuticals as a front for this research. Research on Progenitor strains was conducted simultaneously in different laboratories, with Ashford, Marcus and Spencer all engaging in independent research. t-Virus research began in the late 1960s, soon after Umbrella was founded.[4] As the t-Virus is a series of independently developed strains and not a single virus, new strains do not necessarily rely on recent research by other teams.Spencer projec
-      Spencer's team developed their t-Virus prototype at the Arklay Laboratory, where they had already undergone testing of their "Type A" and "Type B" Progenitor strains. Little is known of Spencer's project, though it would appear Spencer was disappointed in its progress and ordered research data be stolen from his counterparts. Work on this virus was completely abandoned by 1978.</div>
+            Basic 2 Column CSS Template
+        </div>
     </div>
+    <div class="row">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Socials</a></li>
+            <li style="float:right;"><a href="#">Contact</a></li>
+        </ul>
     </div>
-  </body>
+    <div class="row">
+        <div id="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+
+        </div>
+        <div id="sidebar">
+            Sidebar <br/>Ads<br/>Ads
+        </div>
+    </div>
+    <div class="row">
+        <div id="footer">
+            Copyright 2021 | Web Design | <a href="mailto:">akiedes@vtsd.com</a>
+        </div>
+    </div>
+
+
+</div>
+</body>
 </html>
