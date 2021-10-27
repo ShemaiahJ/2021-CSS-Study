@@ -4,38 +4,59 @@
     <meta charset="utf-8">
     <title>NavBar!!!!</title>
     <style>
-      ul{
-        list-style-type: none;
-      margin: 0;
-      padding: 0;
-      background-color: #333;
+    .NavBar{
       overflow: hidden;
-         }
-         li{
-            float: left;
-            border-right: 1px solid #bbb;
-         }
-         li a{
-           display: block;
-           padding: 14px 16px;
-           color: blue;
-          text-decoration: none;
-         }
-         li a:hover:not(.active){
-            background-color: #111;
-         }
+      background-color: #333;
 
-         .active{
-           background-color: #84AA6D;
-         }
+    }
+    .NavBar a:hover .DropDown:hover .dropButton{
+      background-color: gray;
+    }
+    .DropDown{
+      float: left;
+      overflow: hidden;
+    }
+    .DropDown .dropButton{
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+
+    }
+    .dropdownContents{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    }
     </style>
   </head>
   <body>
-    <ul>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Socials</a></li>
+    <div class="NavBar">
+      <a href="#" class="active">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Socials</a>
+    <div class="DropDown">
+      <button class="dropButton">Social
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdownContents">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Snapchat</a>
+        <a href="#">Whatsapp</a>
+        <a href="#">Signal</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
     </ul>
   </body>
 </html>
+<!-- "inherit" is a property that inherits the coding of the coding above the place it is used-->
