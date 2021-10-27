@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dropdown Menus</title>
+    <style>
+      .dropdown{
+        position: relative;
+        display: inline-block;
+      }
+      .dropdownConent{
+        display: none;
+        position: absolute;
+        background-color: #dddddd;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+        padding: 12px  16px;
+        x-index: 1;
+      }
+      .dropdown: hover .dropdownContent{
+          display: block;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <span>Mouse over Me</span>
+      <div class="dropdownContent">
+ <p>There are some stuff here!!!</p>
+
+
+
+        </div>
+        </div>
+  </body>
+</html>
