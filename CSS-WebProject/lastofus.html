@@ -5,7 +5,7 @@
     <title>The Last Of Us</title>
 <style>
 body {
-    background-color: gray;
+    background-color: #673;
 }
 
 .container {
@@ -62,6 +62,22 @@ li a:hover:not(.active) {
     padding-left: 10px;
     padding-right: 10px;
     merge-row: sidebar;
+}
+.dropDown{
+  position: relative;
+  display: inline-block;
+}
+.dropDownContent{
+  display: none;
+  position: absolute;
+  background-color: #dddddd;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px  16px;
+  x-index: 1;
+}
+.dropDown:hover .dropDownContent{
+    display: block;
 }
 .row:after{
     content: "";
@@ -125,7 +141,13 @@ div#footer a{
 
       <div class="row">
           <div id="content">
-          Content
+            <div class="dropDown">
+              <img width="10px" height="5px" src= "pics/T-virus.jpg" alt="English">
+                  <div class="dropDownContent">
+              <img width="20px" height="15px" src= "pics/T-virus.jpg" alt="English">
+              <div class="description">The Truth</div>
+                    </div>
+              </div>
           </div>
 
           <div class="row">
