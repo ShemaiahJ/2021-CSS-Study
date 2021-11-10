@@ -105,6 +105,29 @@
           padding-top: 9px;
           padding-right: 9px;
               }
+              #Sidebar{
+                float: right;
+                width: 30%;
+                padding-top: 9px;
+                padding-right: 9px;
+                margin-right: auto;
+              }
+              .dropDown#Sidebar{
+                position: relative;
+                display: inline-block;
+              }
+              .dropDownContent{
+                display: none;
+                position: absolute;
+                background-color: #dddddd;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px  16px;
+                x-index: 1;
+              }
+              .dropDown:hover .dropDownContent{
+                  display: block;
+              }
         #footer{
             text-align: center;
             padding: 20px;
@@ -127,30 +150,24 @@
     </div>
     <div class="row">
       <div class="navbar">
-
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Infected</a></li>
-            <li><div class="dropdown">
-              <button class="dropButton">
-                <i class="fa fa-caret-down">Story</i>
+          <a href="#" class="active">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About</a>
+          <div class="dropdown">
+              <button class="dropButton">Socials
+                  <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdownContent">
-                <ul>
-                  <li><a href="#">Ellie</a></li>
-                  <li><a href="#">Joel</a></li>
-                  <li><a href="#">Michelle</a></li>
-                  <li><a href="#">Fireflies</a></li>
-                </li>
-                  </ul>
+                  <a href="#">Joel's Story</a>
+                  <a href="#">Ellie's Story</a>
+                  <a href="#">Infected Appearance</a>
+                  <a href="#">Michelle's Story</a>
+                  <a href="#">The Fireflies</a>
 
-                </div>
-
-
-            <li style="float:right;"><a href="#">Info</a></li>
-
-
-    </div>
+              </div>
+          </div>
+          <a href="#">Contact</a>
+</div>
   </div>
     <div class="row">
         <div id="content">
@@ -167,6 +184,15 @@ Resident Evil 3, known in Japan as BIOHAZARD RE:3 (バイオハザード RE:3?),
         <div class="row">
     <div id="sidebar">
          BIOHAZARD RE:2 (バイオハザード RE:2?)  Resident Evil 7: Biohazard,
+      </div>
+      <div id="Sidebar">
+        <div class="dropDown">
+          <img width="100px" height="50px" src= "pics/tlou.jpg" alt="English">
+              <div class="dropDownContent">
+          <img width="200px" height="150px" src= "pics/tlou.jpg" alt="English">
+          <div class="description">The Truth</div>
+                </div>
+          </div>
       </div>
        </div>
         </div>
